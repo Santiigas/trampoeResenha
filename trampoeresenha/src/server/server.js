@@ -11,7 +11,7 @@ app.use(express.json());
 const database = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "123456",
+    password: "12345678",
     database: "resenha_trampo",
 })
 
@@ -21,7 +21,6 @@ database.connect(err =>{
         console.error("Erro ao conectar no banco:", err);
         return
     }
-
     console.log("Conectado ao banco MySQL!")
 })
 
